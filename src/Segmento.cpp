@@ -24,7 +24,7 @@ int Segmento::getPortaDeDestino(){
 }
 
 void Segmento::imprimir(){
-    cout << "Dado: "
+    cout << "\tDado: "
     << this->dado
     << ", Porta de Origem: "
     << this->portaDeOrigem
