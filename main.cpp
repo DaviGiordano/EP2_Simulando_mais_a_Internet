@@ -1,9 +1,11 @@
 #include <iostream>
+#include "Segmento.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Segmento *s = new Segmento(1,2,"Oi");
+    s->imprimir();
     return 0;
 }
