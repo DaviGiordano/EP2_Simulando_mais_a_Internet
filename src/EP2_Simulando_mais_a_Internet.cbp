@@ -36,6 +36,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Fila.cpp" />
+		<Unit filename="Fila.h" />
 		<Unit filename="Segmento.cpp" />
 		<Unit filename="Segmento.h" />
 		<Unit filename="datagrama.cpp" />
