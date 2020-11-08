@@ -43,7 +43,7 @@ No* TabelaDeRepasse::getDestino(int endereco) {
 
 // Mapeia um roteador a um endereco na tabela de repasse. Caso for possivel mapear retorna true, caso contrario, false.
 // Se o endereco ja estiver mapeado, altera o roteador ligado a ele, caso contrario, adiciona um endereco na tabela
-void TabelaDeRepasse::mapear(int endereco, Roteador *adjacente) {
+void TabelaDeRepasse::mapear(int endereco, No *adjacente) {
 
     //indicador de passagem
     int enderecoJaFoiMapeado = 0;

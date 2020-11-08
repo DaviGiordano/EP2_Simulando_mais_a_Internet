@@ -1,7 +1,7 @@
 #ifndef TABELADEREPASSE_H
 #define TABELADEREPASSE_H
 
-//#include "No.h"
+#include "No.h"
 
 class TabelaDeRepasse
 {
