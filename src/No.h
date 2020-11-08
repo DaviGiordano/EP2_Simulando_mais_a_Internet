@@ -12,7 +12,9 @@ class No
         virtual Fila* getFila();
         virtual int getEndereco();
 
+        //metodo abstrato
         virtual void processar() = 0;
+
         virtual void receber(Datagrama *d);
 
         virtual void imprimir();
@@ -20,11 +22,8 @@ class No
         static const int TAMANHO_FILA = 5;
 
     protected:
-
-    private:
         Fila* fila;
         int endereco;
-
 };
 
 #endif // NO_H

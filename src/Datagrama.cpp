@@ -38,8 +38,12 @@ bool Datagrama::ativo(){
 void Datagrama::imprimir(){
     cout << "Origem: "
         << this->origem
+        << ":"
+        << this->dado->getPortaDeOrigem()
         << ", Destino: "
         << this->destino
+        << ":"
+        << this->dado->getPortaDeDestino()
         << ",TTL: "
         << this->ttl
         << ", "
