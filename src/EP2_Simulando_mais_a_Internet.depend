@@ -20,3 +20,32 @@
 1604264768 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\datagrama.h
 	"Segmento.h"
 
+1604835939 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\main.cpp
+	<iostream>
+	"Segmento.h"
+	"Datagrama.h"
+	"Fila.h"
+	<string>
+
+1604265610 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.h
+	<iostream>
+	<string>
+
+1604265610 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.cpp
+	"Segmento.h"
+
+1604835339 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.cpp
+	"Datagrama.h"
+
+1604265610 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.h
+	"Segmento.h"
+
+1604835765 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.cpp
+	"Fila.h"
+	<iostream>
+	<string>
+	<stdexcept>
+
+1604835754 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.h
+	"Datagrama.h"
+

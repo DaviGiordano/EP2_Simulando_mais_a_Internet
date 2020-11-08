@@ -1,6 +1,8 @@
 #ifndef FILA_H
 #define FILA_H
 
+#include "Datagrama.h"
+
 
 class Fila
 {
@@ -15,6 +17,10 @@ class Fila
     protected:
 
     private:
+        int inicio = 0;
+        int fim = 0;
+        int tamanho;
+        Datagrama **vetorDeDatagramas;
 };
 
 #endif // FILA_H
