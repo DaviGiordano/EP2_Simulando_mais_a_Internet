@@ -10,7 +10,7 @@ Datagrama::Datagrama(int origem, int destino, int ttl, Segmento *dado)
 
 Datagrama::~Datagrama()
 {
-    delete dado;
+    delete this->dado;
 }
 
 int Datagrama::getOrigem(){

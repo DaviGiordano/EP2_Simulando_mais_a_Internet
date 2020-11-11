@@ -9,12 +9,12 @@ class Fila
     public:
         Fila(int tamanho);
         virtual ~Fila();
+
         virtual void enqueue(Datagrama *d);
         virtual Datagrama *dequeue();
         virtual bool isEmpty();
 
         void imprimir();
-    protected:
 
     private:
         int inicio = 0;

@@ -18,7 +18,7 @@ TabelaDeRepasse* Roteador::getTabela(){
 
 void Roteador::processar(){
     try{
-        //pode jogar um erro:
+        //pode jogar um underflow_error:
         Datagrama* datagramaAtual = this->fila->dequeue();
 
         cout << "Roteador " << this->endereco << endl;
@@ -51,7 +51,7 @@ void Roteador::processar(){
         }
 
 
-    }catch(overflow_error *e){
+    }catch(underflow_error *e){
         cout << "Error: " << e->what() << endl;
     }
 }
