@@ -1,20 +1,13 @@
 #include "Fila.h"
 
-#include <iostream>
-#include <string>
-#include <stdexcept>
 
-using namespace std;
-
-// Inicializa a fila e constroi um vetor de datagramas com espaço tamanho
+// Inicializa a fila e constroi um vetor de datagramas com espaï¿½o tamanho
 Fila::Fila(int tamanho) :
-tamanho (tamanho)
-{
+tamanho (tamanho) {
     this->vetorDeDatagramas = new Datagrama *[this->tamanho + 1];
 }
 
-Fila::~Fila()
-{
+Fila::~Fila() {
     delete[] this->vetorDeDatagramas;
 }
 
@@ -45,7 +38,7 @@ bool Fila::isEmpty() {
 
 
 // Retira um datagrama da fila. Se a fila estiver vazia, joga um underflow_error
-Datagrama* Fila::dequeue(){
+Datagrama* Fila::dequeue() {
 
     if(this->isEmpty()){
         throw new underflow_error("Fila vazia");
@@ -62,7 +55,7 @@ Datagrama* Fila::dequeue(){
 
 }
 
-void Fila::imprimir(){
+void Fila::imprimir() {
     cout << endl << "== FILA IMPRIMIR ==" << endl << endl;
     cout << "\ttamanho disponivel - " << this->tamanho << endl << endl;
     cout << "\tinicio - " << this->inicio << endl << endl;

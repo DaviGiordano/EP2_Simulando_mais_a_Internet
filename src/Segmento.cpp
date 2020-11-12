@@ -1,29 +1,27 @@
 #include "Segmento.h"
 
-Segmento::Segmento(int portaDeOrigem, int portaDeDestino, string dado)
-{
+Segmento::Segmento(int portaDeOrigem, int portaDeDestino, string dado)  {
     this->dado = dado;
     this->portaDeDestino = portaDeDestino;
     this->portaDeOrigem = portaDeOrigem;
 }
 
-Segmento::~Segmento()
-{
+Segmento::~Segmento() {
 }
 
-string Segmento::getDado(){
+string Segmento::getDado() {
     return this->dado;
 }
 
-int Segmento::getPortaDeOrigem(){
+int Segmento::getPortaDeOrigem() {
     return this->portaDeOrigem;
 }
 
-int Segmento::getPortaDeDestino(){
+int Segmento::getPortaDeDestino() {
     return this->portaDeDestino;
 }
 
-void Segmento::imprimir(){
+void Segmento::imprimir() {
     cout << "\tDado: "
     << this->dado
     << ", Porta de Origem: "

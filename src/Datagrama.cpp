@@ -1,41 +1,39 @@
 #include "Datagrama.h"
 
-Datagrama::Datagrama(int origem, int destino, int ttl, Segmento *dado)
-{
+Datagrama::Datagrama(int origem, int destino, int ttl, Segmento *dado) {
     this->origem = origem;
     this->destino = destino;
     this->ttl = ttl;
     this->dado = dado;
 }
 
-Datagrama::~Datagrama()
-{
+Datagrama::~Datagrama() {
     delete this->dado;
 }
 
-int Datagrama::getOrigem(){
+int Datagrama::getOrigem() {
     return this->origem;
 }
 
-int Datagrama::getDestino(){
+int Datagrama::getDestino() {
     return this->destino;
 }
-int Datagrama::getTtl(){
+int Datagrama::getTtl() {
     return this->ttl;
 }
-Segmento* Datagrama::getDado(){
+Segmento* Datagrama::getDado() {
     return this->dado;
 }
 
-void Datagrama::processar(){
+void Datagrama::processar() {
     this->ttl -= 1;
 }
 
-bool Datagrama::ativo(){
+bool Datagrama::ativo() {
     return (this->getTtl() > 0);
 }
 
-void Datagrama::imprimir(){
+void Datagrama::imprimir() {
     cout << "Origem: "
         << this->origem
         << ":"

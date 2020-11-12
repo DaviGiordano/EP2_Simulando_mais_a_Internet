@@ -4,8 +4,7 @@
 #include "No.h"
 #include "TabelaDeRepasse.h"
 
-class Roteador : public No
-{
+class Roteador : public No {
     public:
         Roteador(int endereco);
         virtual ~Roteador();

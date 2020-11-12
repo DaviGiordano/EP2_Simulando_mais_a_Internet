@@ -1,49 +1,47 @@
 #include "Roteador.h"
 
 
-Roteador::Roteador(int endereco) : No(endereco)
-{
+Roteador::Roteador(int endereco) : No(endereco) {
     this->tabela = new TabelaDeRepasse();
 }
 
-Roteador::~Roteador()
-{
+Roteador::~Roteador() {
     delete tabela;
 }
 
-TabelaDeRepasse* Roteador::getTabela(){
+TabelaDeRepasse* Roteador::getTabela() {
     return this->tabela;
 }
 
 
-void Roteador::processar(){
-    try{
+void Roteador::processar() {
+    try {
         //pode jogar um underflow_error:
         Datagrama* datagramaAtual = this->fila->dequeue();
 
         cout << "Roteador " << this->endereco << endl;
         datagramaAtual->processar();
 
-        if(!datagramaAtual->ativo()){
+        if(!datagramaAtual->ativo()) {
             cout << "\tDestruido por TTL: ";
             datagramaAtual->imprimir();
             delete datagramaAtual;
         }
-        else if(datagramaAtual->getDestino() == this->endereco){
+        else if(datagramaAtual->getDestino() == this->endereco) {
             //tambem destruir
             cout << "\tRecebido: ";
             datagramaAtual->imprimir();
             delete datagramaAtual;
         }
-        else{
+        else {
             No* proximoNo = this->tabela->getDestino(datagramaAtual->getDestino());
 
-            if(proximoNo != NULL){
+            if(proximoNo != NULL) {
                 cout << "\tEnviado para " << proximoNo->getEndereco() << ": ";
                 datagramaAtual->imprimir();
                 proximoNo->receber(datagramaAtual);
             }
-            else{
+            else {
                 cout << "\tSemProximo: ";
                 datagramaAtual->imprimir();
                 delete datagramaAtual;
@@ -51,7 +49,7 @@ void Roteador::processar(){
         }
 
 
-    }catch(underflow_error *e){
+    }catch(underflow_error *e) {
         cout << "Error: " << e->what() << endl;
     }
 }

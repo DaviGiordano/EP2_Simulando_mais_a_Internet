@@ -2,7 +2,10 @@
 #define DATAGRAMA_H
 
 #include "Segmento.h"
+#include <iostream>
+#include <string>
 
+using namespace std;
 
 class Datagrama
 {
