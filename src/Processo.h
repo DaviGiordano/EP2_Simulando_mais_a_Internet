@@ -19,10 +19,9 @@ class Processo
 
         virtual void imprimir();
 
-        //static void setTtlPadrao(int padrao);
-        //static int getTtlPadrao();
+        static void setTtlPadrao(int padrao);
+        static int getTtlPadrao();
 
-        //static int ttlPadrao = 5; ??
 
     protected:
         int endereco;
@@ -30,6 +29,7 @@ class Processo
         Roteador* gateway;
 
     private:
+        static int ttlPadrao;
 
 };
 

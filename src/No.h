@@ -2,7 +2,9 @@
 #define NO_H
 
 #include "Fila.h"
-#include "Fila.h"
+#include <string>
+#include <iostream>
+using namespace std;
 class No
 {
     public:
@@ -19,11 +21,13 @@ class No
 
         virtual void imprimir();
 
-        static const int TAMANHO_FILA = 5;
 
     protected:
         Fila* fila;
         int endereco;
+
+    private: 
+        static const int TAMANHO_FILA;
 };
 
 #endif // NO_H

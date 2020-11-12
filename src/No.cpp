@@ -1,13 +1,13 @@
 #include "No.h"
 
-No::No(int endereco) : endereco(endereco)
-{
+const int No::TAMANHO_FILA = 5;
+
+No::No(int endereco) : endereco(endereco) {
     this->fila = new Fila(No::TAMANHO_FILA);
 
 }
 
-No::~No()
-{
+No::~No() {
     delete fila;
 }
 
@@ -24,9 +24,9 @@ int No::getEndereco() {
 // e imprime uma mensagem de erro
 void No::receber(Datagrama *d) {
 
-    try{
+    try {
         this->fila->enqueue(d);
-    }catch(overflow_error *e){
+    } catch(overflow_error *e){
         cout << "\tFila em " << this->endereco << " estourou" << endl;
     }
 

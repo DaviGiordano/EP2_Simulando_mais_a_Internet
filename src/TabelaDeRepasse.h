@@ -2,6 +2,9 @@
 #define TABELADEREPASSE_H
 
 #include "No.h"
+#include <iostream>
+#include <stdexcept>
+using namespace std;
 
 class TabelaDeRepasse
 {
@@ -16,10 +19,9 @@ public:
     virtual No* getDestino(int endereco);
     virtual void imprimir();
 
-    //definimos o valor da tabela aqui ou no cpp?
-    static const int MAXIMO_TABELA = 5;
 
 private:
+    static const int MAXIMO_TABELA;
     int quantidadeDeAdjacentes = 0;
     int *enderecos;
     No **adjacentes;

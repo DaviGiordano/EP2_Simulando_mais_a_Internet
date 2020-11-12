@@ -1,19 +1,15 @@
 #include "TabelaDeRepasse.h"
-//#include "No.h"
-#include <iostream>
-#include <stdexcept>
 
-using namespace std;
-TabelaDeRepasse::TabelaDeRepasse()
-{
+const int TabelaDeRepasse::MAXIMO_TABELA = 5
+
+TabelaDeRepasse::TabelaDeRepasse() {
     this->enderecos = new int[TabelaDeRepasse::MAXIMO_TABELA];
     this->adjacentes = new No*[TabelaDeRepasse::MAXIMO_TABELA];
     this->padrao = NULL; //ponteiro para no padrao apontando para NULL, check.
     //ctor
 }
 
-TabelaDeRepasse::~TabelaDeRepasse()
-{
+TabelaDeRepasse::~TabelaDeRepasse() {
     delete[] this->adjacentes;
     delete[] this->enderecos;
 }
@@ -69,7 +65,7 @@ void TabelaDeRepasse::mapear(int endereco, No *adjacente) {
 }
 
 
-void TabelaDeRepasse::imprimir(){
+void TabelaDeRepasse::imprimir() {
     cout << endl << "== TABELA DE REPASSE IMPRIMIR ==" << endl << endl;
 
     if(this->padrao != NULL){
