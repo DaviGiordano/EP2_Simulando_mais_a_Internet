@@ -31,43 +31,54 @@
 	<iostream>
 	<string>
 
-1605093950 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.cpp
+1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.cpp
 	"Segmento.h"
 
-1605094040 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.cpp
+1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.cpp
 	"Datagrama.h"
 
-1604265610 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.h
+1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.h
 	"Segmento.h"
+	<iostream>
+	<string>
 
-1604835765 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.cpp
+1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.cpp
 	"Fila.h"
+
+1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.h
+	"Datagrama.h"
 	<iostream>
 	<string>
 	<stdexcept>
 
-1605094165 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\fila.h
-	"Datagrama.h"
-
-1604839020 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\tabeladerepasse.cpp
+1605456482 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\tabeladerepasse.cpp
 	"TabelaDeRepasse.h"
+
+1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\tabeladerepasse.h
+	"No.h"
 	<iostream>
 	<stdexcept>
 
-1604838984 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\tabeladerepasse.h
+1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.h
+	"Fila.h"
+	<string>
+	<iostream>
+
+1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
 	"No.h"
 
-1604839516 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.h
-	"Fila.h"
-	"Fila.h"
-
-1604839145 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
-	"No.h"
-
-1605094775 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
+1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
 	"Roteador.h"
 
-1604840922 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.h
+1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.h
 	"No.h"
 	"TabelaDeRepasse.h"
+
+1605456859 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.cpp
+	"Processo.h"
+	<iostream>
+
+1605456847 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.h
+	"Segmento.h"
+	"Roteador.h"
 

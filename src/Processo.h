@@ -4,6 +4,7 @@
 #include "Segmento.h"
 #include "Roteador.h"
 
+
 //Sera ancenstral e abstrata
 class Processo
 {

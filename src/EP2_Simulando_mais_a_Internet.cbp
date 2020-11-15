@@ -41,6 +41,8 @@
 		<Unit filename="Datagrama.h" />
 		<Unit filename="Fila.cpp" />
 		<Unit filename="Fila.h" />
+		<Unit filename="Navegador.cpp" />
+		<Unit filename="Navegador.h" />
 		<Unit filename="No.cpp" />
 		<Unit filename="No.h" />
 		<Unit filename="Processo.cpp" />

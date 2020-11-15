@@ -1,4 +1,6 @@
 #include "Processo.h"
+#include <iostream>
+using namespace std;
 
 int Processo::ttlPadrao = 5;
 
@@ -27,4 +29,15 @@ int Processo::getEndereco(){
 
 int Processo::getPorta(){
     return this->porta;
+}
+
+void Processo::imprimir(){
+    cout << "== Processo ==" << endl;
+    cout << "Endereco: "
+        << this->getEndereco()
+        << ", Porta: "
+        << this->getPorta()
+        << ", TTL padrao: "
+        << this->getTtlPadrao()
+        << endl;
 }

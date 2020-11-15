@@ -1,6 +1,6 @@
 #include "TabelaDeRepasse.h"
 
-const int TabelaDeRepasse::MAXIMO_TABELA = 5
+const int TabelaDeRepasse::MAXIMO_TABELA = 5;
 
 TabelaDeRepasse::TabelaDeRepasse() {
     this->enderecos = new int[TabelaDeRepasse::MAXIMO_TABELA];
