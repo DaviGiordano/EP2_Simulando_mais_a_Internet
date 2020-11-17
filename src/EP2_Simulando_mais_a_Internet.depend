@@ -82,12 +82,20 @@
 	"Segmento.h"
 	"Roteador.h"
 
-1605610567 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.cpp
+1605618161 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.cpp
 	"Navegador.h"
+
+1605617289 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.h
+	"Processo.h"
 	"Datagrama.h"
 	"Segmento.h"
-
-1605609038 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.h
-	"Processo.h"
 	<string>
+	<iostream>
+
+1605610812 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.cpp
+	"ServidorWeb.h"
+	<iostream>
+
+1605610776 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.h
+	"Processo.h"
 

@@ -51,6 +51,8 @@
 		<Unit filename="Roteador.h" />
 		<Unit filename="Segmento.cpp" />
 		<Unit filename="Segmento.h" />
+		<Unit filename="ServidorWeb.cpp" />
+		<Unit filename="ServidorWeb.h" />
 		<Unit filename="TabelaDeRepasse.cpp" />
 		<Unit filename="TabelaDeRepasse.h" />
 		<Unit filename="main.cpp" />
