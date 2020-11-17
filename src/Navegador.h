@@ -11,6 +11,7 @@ class Navegador : public Processo {
 
         virtual void abrir(int endereco, int porta);
         virtual void abrir(int endereco);
+        virtual void receber(int origem, Segmento* mensagem);
 
         virtual string getConteudo();
 
