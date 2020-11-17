@@ -74,11 +74,20 @@
 	"No.h"
 	"TabelaDeRepasse.h"
 
-1605456859 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.cpp
+1605457059 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.cpp
 	"Processo.h"
 	<iostream>
 
 1605456847 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.h
 	"Segmento.h"
 	"Roteador.h"
+
+1605610567 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.cpp
+	"Navegador.h"
+	"Datagrama.h"
+	"Segmento.h"
+
+1605609038 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\navegador.h
+	"Processo.h"
+	<string>
 
