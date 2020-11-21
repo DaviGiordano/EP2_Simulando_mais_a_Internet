@@ -1,5 +1,5 @@
 #include "Roteador.h"
-
+#include "stdexcept"
 
 Roteador::Roteador(int endereco) : No(endereco) {
     this->tabela = new TabelaDeRepasse();

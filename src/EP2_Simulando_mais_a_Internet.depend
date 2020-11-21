@@ -67,8 +67,9 @@
 1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
 	"No.h"
 
-1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
+1605962343 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
 	"Roteador.h"
+	"stdexcept"
 
 1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.h
 	"No.h"
@@ -98,4 +99,16 @@
 
 1605610776 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.h
 	"Processo.h"
+
+1605963492 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.cpp
+	"Hospedeiro.h"
+
+1605962576 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.h
+	"No.h"
+	"Roteador.h"
+	"Processo.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+	<string>
+	<vector>
 
