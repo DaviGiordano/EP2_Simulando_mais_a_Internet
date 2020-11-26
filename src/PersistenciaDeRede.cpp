@@ -47,7 +47,7 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
         input >> enderecoGateway;
         input >> quantidadeDeProcessos;
 
-            // ELE NAO ESTA ME DEIXANDO COLOCAR UM NOH No LUGAR DO ROTEADOR* GATEWAY :/
+        // ELE NAO ESTA ME DEIXANDO COLOCAR UM NOH No LUGAR DO ROTEADOR* GATEWAY :/
         Hospedeiro* novoHospedeiro = new Hospedeiro(enderecoHospedeiro, rede->getNo(enderecoGateway));
 
         //Leitura dos processos de um hospedeiro
@@ -55,6 +55,7 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
             char tipoProcesso;
             input >> tipoProcesso;
             int porta;
+
             //se for um ServidorWeb
             if(tipoProcesso == 'w'){
                 string conteudo;
@@ -68,25 +69,27 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
                 novoHospedeiro->adicionarNavegador(porta);
             }
         }
-        //Leitura das tabelas de repasse de cada roteador
-        for(int i; i < quantidadeRoteadores; i++){
-            int enderecoRoteadorAtual, enderecoRoteadorPadrao, quantidadeMapeamentos;
-            input >> enderecoRoteadorAtual;
-            input >> enderecoRoteadorPadrao;
-            input >> quantidadeMapeamentos;
-            //ELE NAO ESTA ME DEIXANDO CONVERTER DE NO PARA ROTEADOR :/
-            Roteador* roteadorAtual = rede->getNo(enderecoRoteadorAtual);
-            roteadorAtual->getTabela()->setPadrao(rede->getNo(enderecoRoteadorPadrao));
-            //Leitura de cada mapeamento da tabela de repasses
-            for (int j; j < quantidadeMapeamentos; j++){
-                int enderecoAMapear, noDesitino;
-                input >> enderecoAMapear;
-                input >> noDesitino;
-                roteadorAtual->getTabela()->mapear(enderecoAMapear, rede->getNo(noDesitino));
-            }
+        rede->adicionar(novoHospedeiro);
+    }
 
+    //Leitura das tabelas de repasse de cada roteador
+    for(int i; i < quantidadeRoteadores; i++){
+        int enderecoRoteadorAtual, enderecoRoteadorPadrao, quantidadeMapeamentos;
+        input >> enderecoRoteadorAtual;
+        input >> enderecoRoteadorPadrao;
+        input >> quantidadeMapeamentos;
+
+        //ELE NAO ESTA ME DEIXANDO CONVERTER DE NO PARA ROTEADOR :/
+        Roteador* roteadorAtual = rede->getNo(enderecoRoteadorAtual);
+        roteadorAtual->getTabela()->setPadrao(rede->getNo(enderecoRoteadorPadrao));
+
+        //Leitura de cada mapeamento da tabela de repasses
+        for (int j; j < quantidadeMapeamentos; j++){
+            int enderecoAMapear, noDestino;
+            input >> enderecoAMapear;
+            input >> noDestino;
+            roteadorAtual->getTabela()->mapear(enderecoAMapear, rede->getNo(noDestino));
         }
-
     }
 
     if(!input.eof()){
@@ -98,5 +101,8 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
         input.close();
         throw new invalid_argument("Arquivo vazio");
     }
+
+    input.close();
+    return rede;
 }
 
