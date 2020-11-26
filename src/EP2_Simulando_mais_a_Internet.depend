@@ -124,11 +124,15 @@
 	"No.h"
 	"Hospedeiro.h"
 
-1606417007 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.cpp
+1606421640 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.cpp
 	"PersistenciaDeRede.h"
+	"Roteador.h"
+	"Rede.h"
+	"Hospedeiro.h"
+	"No.h"
 	<fstream>
 	<stdexcept>
 
-1606417269 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.h
+1606418114 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.h
 	"Rede.h"
 

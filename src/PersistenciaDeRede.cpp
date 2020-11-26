@@ -47,8 +47,9 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
         input >> enderecoGateway;
         input >> quantidadeDeProcessos;
 
-        // ELE NAO ESTA ME DEIXANDO COLOCAR UM NOH No LUGAR DO ROTEADOR* GATEWAY :/
-        Hospedeiro* novoHospedeiro = new Hospedeiro(enderecoHospedeiro, rede->getNo(enderecoGateway));
+        No* recuperandoRoteador = rede->getNo(enderecoGateway);
+        Roteador* gateway = dynamic_cast<Roteador*>(recuperandoRoteador);
+        Hospedeiro* novoHospedeiro = new Hospedeiro(enderecoHospedeiro, gateway);
 
         //Leitura dos processos de um hospedeiro
         for(int j = 0; input && j < quantidadeDeProcessos; j++){
@@ -73,18 +74,22 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
     }
 
     //Leitura das tabelas de repasse de cada roteador
-    for(int i; i < quantidadeRoteadores; i++){
+    for(int i = 0; i < quantidadeRoteadores; i++){
         int enderecoRoteadorAtual, enderecoRoteadorPadrao, quantidadeMapeamentos;
         input >> enderecoRoteadorAtual;
         input >> enderecoRoteadorPadrao;
         input >> quantidadeMapeamentos;
 
-        //ELE NAO ESTA ME DEIXANDO CONVERTER DE NO PARA ROTEADOR :/
-        Roteador* roteadorAtual = rede->getNo(enderecoRoteadorAtual);
-        roteadorAtual->getTabela()->setPadrao(rede->getNo(enderecoRoteadorPadrao));
+        No* recuperandoRoteadorPadrao = rede->getNo(enderecoRoteadorPadrao);
+        Roteador* roteadorPadrao = dynamic_cast<Roteador*>(recuperandoRoteadorPadrao);
+
+        No* recuperandoRoteadorAtual = rede->getNo(enderecoRoteadorAtual);
+        Roteador* roteadorAtual = dynamic_cast<Roteador*>(recuperandoRoteadorAtual);
+
+        roteadorAtual->getTabela()->setPadrao(roteadorPadrao);
 
         //Leitura de cada mapeamento da tabela de repasses
-        for (int j; j < quantidadeMapeamentos; j++){
+        for (int j = 0; j < quantidadeMapeamentos; j++){
             int enderecoAMapear, noDestino;
             input >> enderecoAMapear;
             input >> noDestino;
