@@ -100,7 +100,7 @@
 1605610776 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.h
 	"Processo.h"
 
-1605963492 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.cpp
+1605963816 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.cpp
 	"Hospedeiro.h"
 
 1605962576 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.h
@@ -111,4 +111,15 @@
 	"Navegador.h"
 	<string>
 	<vector>
+
+1606354670 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.cpp
+	"Rede.h"
+
+1606353617 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.h
+	<string>
+	<iostream>
+	<stdexcept>
+	<list>
+	"No.h"
+	"Hospedeiro.h"
 
