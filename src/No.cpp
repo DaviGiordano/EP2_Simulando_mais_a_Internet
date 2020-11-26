@@ -38,7 +38,7 @@ void No::receber(Datagrama *d) {
 void No::imprimir() {
     cout << endl << "== NO IMPRIMIR ==" << endl << endl;
     cout << "\tEndereco: " << this->endereco;
-    cout << "FILA:" << endl;
+    cout << "\nFILA:" << endl;
     this->fila->imprimir();
 
     cout << endl << "== FIM ROTEADOR IMPRIMIR ==" << endl;

@@ -20,12 +20,13 @@
 1604264768 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\datagrama.h
 	"Segmento.h"
 
-1604839404 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\main.cpp
+1606418027 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\main.cpp
 	<iostream>
 	"Segmento.h"
 	"Datagrama.h"
 	"Fila.h"
 	<string>
+	"Rede.h"
 
 1604265610 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.h
 	<iostream>
@@ -64,7 +65,7 @@
 	<string>
 	<iostream>
 
-1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
+1606417333 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
 	"No.h"
 
 1605962343 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
@@ -75,7 +76,7 @@
 	"No.h"
 	"TabelaDeRepasse.h"
 
-1605457059 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.cpp
+1606417418 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\processo.cpp
 	"Processo.h"
 	<iostream>
 
@@ -112,7 +113,7 @@
 	<string>
 	<vector>
 
-1606354670 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.cpp
+1606417519 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.cpp
 	"Rede.h"
 
 1606353617 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.h
@@ -122,4 +123,12 @@
 	<list>
 	"No.h"
 	"Hospedeiro.h"
+
+1606417007 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.cpp
+	"PersistenciaDeRede.h"
+	<fstream>
+	<stdexcept>
+
+1606417269 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.h
+	"Rede.h"
 

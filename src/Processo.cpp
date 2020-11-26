@@ -32,7 +32,7 @@ int Processo::getPorta(){
 }
 
 void Processo::imprimir(){
-    cout << "== Processo ==" << endl;
+    cout << "== PROCESSO IMPRIMIR ==" << endl;
     cout << "Endereco: "
         << this->getEndereco()
         << ", Porta: "
@@ -40,4 +40,6 @@ void Processo::imprimir(){
         << ", TTL padrao: "
         << this->getTtlPadrao()
         << endl;
+    cout << "== FIM PROCESSO IMPRIMIR ==" << endl;
+
 }

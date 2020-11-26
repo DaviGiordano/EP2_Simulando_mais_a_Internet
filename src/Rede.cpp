@@ -54,4 +54,9 @@ void Rede::passarTempo() {
 }
 
 void Rede::imprimir() {
+    cout << "=== REDE IMPRIMIR ===" << endl;
+    for(int i = 0; i < this->quantidadeDeNos; i++){
+        nos[i]->imprimir();
+    }
+    cout << "=== FIM REDE IMPRIMIR ===" << endl;
 }
