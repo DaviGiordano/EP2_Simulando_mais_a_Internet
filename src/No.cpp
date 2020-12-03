@@ -28,6 +28,7 @@ void No::receber(Datagrama *d) {
         this->fila->enqueue(d);
     } catch(overflow_error *e){
         cout << "\tFila em " << this->endereco << " estourou" << endl;
+        delete e;
     }
 
 }
