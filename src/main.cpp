@@ -22,8 +22,7 @@ int main()
     //obter dados da rede em formato de persistencia
     string fileName;
     cout << "Digite o nome do arquivo: ";
-    //ALTERAR APOS TESTEScin >> fileName;
-    fileName = "example.txt";
+    cin >> fileName;
     Rede* rede = obterRedeDeArquivo(fileName);
     if (rede != NULL){
         int tela;
