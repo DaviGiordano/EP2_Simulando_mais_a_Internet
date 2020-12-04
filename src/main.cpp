@@ -22,8 +22,8 @@ int main()
     //obter dados da rede em formato de persistencia
     string fileName;
     cout << "Digite o nome do arquivo: ";
-    cin >> fileName;
-
+    //ALTERAR APOS TESTEScin >> fileName;
+    fileName = "example.txt";
     Rede* rede = obterRedeDeArquivo(fileName);
     if (rede != NULL){
         int tela;
@@ -33,12 +33,16 @@ int main()
             switch (tela)
             {
             case 1:
+                cout << endl;
+
                 usarUmNavegador(rede);
                 break;
             case 2:
+                cout << endl;
                 passarTempo(rede);
                 break;
             case 3:
+                cout << endl;
                 alterarTTl();
             default:
                 break;
@@ -68,7 +72,7 @@ Rede* obterRedeDeArquivo(string file){
 int escolherTela(){
     int telaEscolhida;
 
-    cout << "Simulador de Rede" << endl << "---" << endl;
+    cout << endl << "Simulador de Rede" << endl << "---" << endl;
     cout << "1) Usar um navegador" << endl;
     cout << "2) Passar tempo" << endl;
     cout << "3) Alterar TTL" << endl;
@@ -104,6 +108,7 @@ void usarUmNavegador(Rede* rede){
         i++;
     }
 
+    cout << endl;
     //fazendo o uso do navegador em si
     int enderecoDoHospedeiro, portaDoNavegador, enderecoDaPagina, portaDoServidor;
     cout << "Digite o endereco do hospedeiro: ";
@@ -115,15 +120,17 @@ void usarUmNavegador(Rede* rede){
     cout << "Porta do Servidor Web: ";
     cin >> portaDoServidor;
 
-    Hospedeiro* hospedeiroAtual = dynamic_cast<Hospedeiro*>(rede->getNo(enderecoDoHospedeiro));
+    No* recuperandoNo = rede->getNo(enderecoDoHospedeiro);
+    Hospedeiro* hospedeiroAtual = dynamic_cast<Hospedeiro*>(recuperandoNo);
 
     if(hospedeiroAtual == NULL){
-        cout << "Endereco invalido";
+        cout << "Endereco invalido" << endl;
     }else{
-        Navegador* navegadorAtual = dynamic_cast<Navegador*>(hospedeiroAtual->getProcesso(portaDoNavegador));
+        Processo* recuperandoProcesso = hospedeiroAtual->getProcesso(portaDoNavegador);
+        Navegador* navegadorAtual = dynamic_cast<Navegador*>(recuperandoProcesso);
 
         if(navegadorAtual == NULL){
-            cout << "Porta invalida";
+            cout << "Porta invalida" << endl;
         }else{
             navegadorAtual->abrir(enderecoDaPagina,portaDoServidor);
         }
@@ -133,16 +140,22 @@ void usarUmNavegador(Rede* rede){
 }
 
 void passarTempo(Rede* rede){
-    //PASSAR TEMPO E FAZER ALGUMAS IMPRESSOES
-    /*
+
     int quantidadeDeTempo;
     cout << "Quantidade de tempo: ";
     cin >> quantidadeDeTempo;
     for(int i = 0; i < quantidadeDeTempo; i++){
+        cout << endl << "Instante " << i+1 << endl << "---" << endl;
         rede->passarTempo();
     }
-    */
+
 }
 
 void alterarTTl(){
+    cout << "TTL atual: " << Processo::getTtlPadrao() << endl;
+
+    int novoTtl;
+    cout << "Novo TTL: ";
+    cin >> novoTtl;
+    Processo::setTtlPadrao(novoTtl);
 }

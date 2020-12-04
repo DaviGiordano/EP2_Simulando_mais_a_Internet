@@ -46,7 +46,6 @@ list<Hospedeiro*>* Rede::getHospedeiros() {
   return l;
 }
 
-  // virtual void passarTempo();
 void Rede::passarTempo() {
   for (int i = 0; i < this->quantidadeDeNos; i++) {
     this->nos[i]->processar();

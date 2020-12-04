@@ -42,7 +42,7 @@ void Datagrama::imprimir() {
         << this->destino
         << ":"
         << this->dado->getPortaDeDestino()
-        << ",TTL: "
+        << ", TTL: "
         << this->ttl
         << ", "
         << this->dado->getDado()

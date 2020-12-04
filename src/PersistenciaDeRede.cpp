@@ -21,12 +21,14 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
     Rede *rede = new Rede();
 
     ifstream input;
-    input.open("arquivocstr", ios_base::in);
+    input.open(arquivo.c_str());
 
     if(input.fail()){
         input.close();
         throw new invalid_argument("Arquivo nao encontrado");
     }
+
+    //cout << "Abri o arquivo" << endl; OK
 
     //leitura dos roteadores
     int quantidadeRoteadores;
@@ -37,6 +39,7 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
         Roteador* novoRoteador = new Roteador(enderecoRoteador);
         rede->adicionar(novoRoteador);
     }
+    //cout << "Adicionei os roteadores" << endl; OK
 
     //leitura dos hospedeiros
     int quantidadeHospedeiros;
@@ -53,25 +56,37 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
 
         //Leitura dos processos de um hospedeiro
         for(int j = 0; input && j < quantidadeDeProcessos; j++){
+
             char tipoProcesso;
             input >> tipoProcesso;
             int porta;
-
             //se for um ServidorWeb
             if(tipoProcesso == 'w'){
                 string conteudo;
                 input >> porta;
                 input >> conteudo;
-                novoHospedeiro->adicionarServidorWeb(porta,conteudo);
+                try{
+                    novoHospedeiro->adicionarServidorWeb(porta,conteudo);
+                }catch(logic_error *e){
+                    cout << "Erro: " << e->what() << endl;
+                }
 
             }//se for um Navegador
             else if(tipoProcesso == 'n'){
+
                 input >> porta;
-                novoHospedeiro->adicionarNavegador(porta);
+                try{
+                    novoHospedeiro->adicionarNavegador(porta);
+                }catch(logic_error *e){
+                    cout << "Erro:" << e->what() << endl;
+                    delete e;
+                }
+                //cout << porta << endl;
             }
         }
         rede->adicionar(novoHospedeiro);
     }
+    //cout << "Adicionei os hospedeiros" << endl; OK
 
     //Leitura das tabelas de repasse de cada roteador
     for(int i = 0; i < quantidadeRoteadores; i++){
@@ -94,6 +109,8 @@ Rede* PersistenciaDeRede::carregar(string arquivo){
             input >> enderecoAMapear;
             input >> noDestino;
             roteadorAtual->getTabela()->mapear(enderecoAMapear, rede->getNo(noDestino));
+
+
         }
     }
 

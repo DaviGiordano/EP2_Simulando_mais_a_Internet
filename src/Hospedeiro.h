@@ -25,7 +25,7 @@ class Hospedeiro : public No
 
     private:
         Roteador* gateway;
-        vector<Processo*>* processos;
+        vector<Processo*>* processos = new vector<Processo*>();
 
 };
 

@@ -20,12 +20,16 @@
 1604264768 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\datagrama.h
 	"Segmento.h"
 
-1606418027 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\main.cpp
+1607045244 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\main.cpp
 	<iostream>
+	<string>
+	<stdexcept>
+	<list>
+	<vector>
 	"Segmento.h"
 	"Datagrama.h"
+	"PersistenciaDeRede.h"
 	"Fila.h"
-	<string>
 	"Rede.h"
 
 1604265610 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.h
@@ -35,7 +39,7 @@
 1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\segmento.cpp
 	"Segmento.h"
 
-1605453710 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.cpp
+1607044952 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.cpp
 	"Datagrama.h"
 
 1605453710 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\datagrama.h
@@ -68,7 +72,7 @@
 1606959952 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\no.cpp
 	"No.h"
 
-1605962343 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
+1607045336 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\roteador.cpp
 	"Roteador.h"
 	"stdexcept"
 
@@ -94,17 +98,17 @@
 	<string>
 	<iostream>
 
-1605610812 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.cpp
+1607045004 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.cpp
 	"ServidorWeb.h"
 	<iostream>
 
 1605610776 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\servidorweb.h
 	"Processo.h"
 
-1605963816 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.cpp
+1607045274 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.cpp
 	"Hospedeiro.h"
 
-1605962576 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.h
+1607043069 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\hospedeiro.h
 	"No.h"
 	"Roteador.h"
 	"Processo.h"
@@ -113,7 +117,7 @@
 	<string>
 	<vector>
 
-1606417519 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.cpp
+1607040728 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.cpp
 	"Rede.h"
 
 1606353617 c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\rede.h
@@ -124,7 +128,7 @@
 	"No.h"
 	"Hospedeiro.h"
 
-1606421640 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.cpp
+1607043454 source:c:\users\davig\onedrive\documentos\mat…rias 2020.2\pcs3131\ep2_simulando_mais_a_internet\src\persistenciaderede.cpp
 	"PersistenciaDeRede.h"
 	"Roteador.h"
 	"Rede.h"

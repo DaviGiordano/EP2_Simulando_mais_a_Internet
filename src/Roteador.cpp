@@ -50,6 +50,6 @@ void Roteador::processar() {
 
 
     }catch(underflow_error *e) {
-        cout << "Error: " << e->what() << endl;
+        //cout << "Error: " << e->what() << endl;
     }
 }

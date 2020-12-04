@@ -21,6 +21,7 @@ void Hospedeiro::adicionarServidorWeb(int porta, string conteudo){
     for(unsigned int i = 0; i < processos->size(); i++) {
         if((*processos)[i] == novoProcesso) throw new logic_error("Processo ja adicionado");
     }
+
     processos->push_back(novoProcesso);
 }
 
@@ -31,6 +32,7 @@ void Hospedeiro::adicionarNavegador(int porta){
     for(unsigned int i = 0; i < processos->size(); i++) {
         if((*processos)[i] == novoProcesso) throw new logic_error("Processo ja adicionado");
     }
+
     processos->push_back(novoProcesso);
 }
 
@@ -47,22 +49,24 @@ vector<Processo*>* Hospedeiro::getProcessos(){
 }
 
 //Processsa um datagrama da fila do Hospedeiro, repassando-o para o processo (porta) de destino
+//captura um underflow_error da fila do datagrama
 void Hospedeiro::processar(){
 
-    int encontreiProcesso = 0;
-    Datagrama* datagramaAtual = this->fila->dequeue();
-
-    for(unsigned int i = 0; i < processos->size(); i++) {
-        if((*processos)[i]->getPorta() == datagramaAtual->getDado()->getPortaDeDestino()){
-            encontreiProcesso = 1;
-            (*processos)[i]->receber(datagramaAtual->getOrigem(), datagramaAtual->getDado());
+    try{
+        int encontreiProcesso = 0;
+        Datagrama* datagramaAtual = this->fila->dequeue();
+        for(unsigned int i = 0; i < processos->size(); i++) {
+            if((*processos)[i]->getPorta() == datagramaAtual->getDado()->getPortaDeDestino()){
+                encontreiProcesso = 1;
+                (*processos)[i]->receber(datagramaAtual->getOrigem(), datagramaAtual->getDado());
+            }
         }
+        if(!encontreiProcesso){
+            cout << "Sem destino: " << endl;
+            datagramaAtual->imprimir();
+        }
+        delete datagramaAtual;
+    }catch(underflow_error *e){
+        //cout << "Erro: " << e->what() << endl;
     }
-
-    if(!encontreiProcesso){
-        cout << "Sem destino: " << endl;
-        datagramaAtual->imprimir();
-    }
-
-    delete datagramaAtual;
 }
