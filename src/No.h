@@ -20,14 +20,14 @@ class No
         virtual void receber(Datagrama *d);
 
         virtual void imprimir();
-
+        static const int TAMANHO_FILA;
 
     protected:
         Fila* fila;
         int endereco;
 
     private: 
-        static const int TAMANHO_FILA;
+        
 };
 
 #endif // NO_H

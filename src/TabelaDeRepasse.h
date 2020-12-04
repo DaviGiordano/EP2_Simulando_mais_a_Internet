@@ -18,10 +18,10 @@ public:
     virtual void setPadrao(No *padrao);
     virtual No* getDestino(int endereco);
     virtual void imprimir();
-
+    static const int MAXIMO_TABELA;
 
 private:
-    static const int MAXIMO_TABELA;
+   
     int quantidadeDeAdjacentes = 0;
     int *enderecos;
     No **adjacentes;
